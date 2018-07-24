@@ -8,11 +8,11 @@ public interface RoleMapper {
 	
 	public int insertRole(Role role);
 	
-	public int deleteRole(Long id);
+	public int deleteRole(int id);
 	
 	public int updateRole(Role role);
 	
-	public Role getRole(long id);
+	public Role getRole(int id);
 	
 	public List<Role> findRoles(String Rolename);
 }
