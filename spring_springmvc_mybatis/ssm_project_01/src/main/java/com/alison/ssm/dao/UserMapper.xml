@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" ?>    
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >    
+<mapper namespace="com.alison.ssm.dao.IUserDao" >      
+    
+    <resultMap id="BaseResultMap" type="com.alison.ssm.pojo.User">    
+        <result column="id" property="id" jdbcType="INTEGER" />    
+        <result column="name" property="name" jdbcType="VARCHAR" />    
+        <result column="password" property="password" jdbcType="VARCHAR" />    
+        <result column="age" property="age" jdbcType="INTEGER" />    
+    </resultMap>    
+    
+    <sql id="Base_Column_List">    
+        id, name, password, age    
+    </sql>    
+    
+    <!-- 查询用户-->    
+    <select id="queryByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer">    
+         
+    </select>    
+        
+    <!-- 查询用户-->    
+    <select id="getAllUser" resultMap="BaseResultMap">    
+         select
+         <include refid="Base_Column_List"/>
+         from user01
+    </select>    
+        
+    <!-- 批量查询用户-->    
+    <select id="queryUserByBatch" resultMap="BaseResultMap" parameterType="java.util.Map">    
+        
+    </select>    
+        
+    <!-- 插入用户 -->    
+    <insert id="insertUser" parameterType="com.alison.ssm.pojo.User">    
+    	insert into user01 
+    	<trim prefix="(" suffix=")" suffixOverrides=",">
+    		<if test="id != null">
+    			id
+    		</if>
+    		<if test="name != null">
+    			name
+    		</if>
+    		<if test="password != null">
+    			password
+    		</if>
+    		<if test="age != null">
+    			age
+    		</if>
+    	</trim>
+    	<trim prefix="(" suffix=")" suffixOverrides=",">
+    		<if test="id != null">
+    			#{id, jdbcType=INTEGER}
+    		</if>
+    		<if test="name != null">
+    			#{name, jdbcType=VARCHAR}
+    		</if>
+    		<if test="password != null">
+    			#{password, jdbcType=VARCHAR}
+    		</if>
+    		<if test="age != null">
+    			#{age, jdbcType=INTEGER}
+    		</if>
+    	</trim>
+    </insert>    
+        
+    <!-- 批量插入用户 -->    
+    <insert id="insertUserByBatch" parameterType="java.util.List" >    
+     
+    </insert>    
+    
+    <!-- 删除用户 -->    
+    <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">    
+             
+    </delete>    
+        
+    <!-- 批量删除用户 -->    
+    <delete id="deleteUserByBatch" parameterType="java.util.Map" >    
+       
+    </delete>    
+    
+    <!-- 更新用户 -->    
+    <update id="updateByPrimaryKey" parameterType="com.ssm.dto.User" >      
+            
+    </update>    
+      
+</mapper>   
