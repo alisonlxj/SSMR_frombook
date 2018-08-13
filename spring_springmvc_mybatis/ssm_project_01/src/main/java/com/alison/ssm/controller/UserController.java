@@ -27,6 +27,7 @@ public class UserController {
 		return "userList";
 	}
 	
+	@RequestMapping("/showUser")
 	public String showUser(HttpServletRequest request, Model model){
 		int userId = Integer.parseInt(request.getParameter("id"));
 		User user = userService.getUserById(userId);
@@ -44,7 +45,7 @@ public class UserController {
 		User user = new User();
 		user.setAge(Integer.parseInt(request.getParameter("age")));
 		user.setName(String.valueOf(request.getParameter("name")));
-		user.setPassword(String.valueOf(request.getParameter("age")));
+		user.setPassword(String.valueOf(request.getParameter("password")));
 		userService.addUser(user);
 		return "redirect:/user/userList";
 	}

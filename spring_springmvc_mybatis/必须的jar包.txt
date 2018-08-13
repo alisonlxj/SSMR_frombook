@@ -12,6 +12,7 @@ spring-core
 spring-web
 spring-webmvc
 spring-tx
+spring-expression
 spring-jdbc
 spring-oxm
 spring-orm

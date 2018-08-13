@@ -79,7 +79,7 @@
     </delete>    
     
     <!-- 更新用户 -->    
-    <update id="updateByPrimaryKey" parameterType="com.ssm.dto.User" >      
+    <update id="updateByPrimaryKey" parameterType="com.alison.ssm.pojo.User" >      
             
     </update>    
       
