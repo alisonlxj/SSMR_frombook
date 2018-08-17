@@ -1,0 +1,17 @@
+1、ssm
+	-->	https://blog.csdn.net/qianyou6026/article/details/73379073/		
+		spring+springmvc+mybatis整合详细步骤	CSDN
+		先是mybatis独立，再将mybatis与spring整合，最后引入springmvc，完成ssm整合
+
+2、spring
+
+
+3、mybatis
+
+
+4、springmvc
+
+
+5、xml
+	-->	https://www.cnblogs.com/doit8791/p/5757798.html		
+		Spring配置文件头及xsd文件版本	博客园
