@@ -7,8 +7,8 @@
         http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.1.xsd
         http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-4.1.xsd">                    
 
-    <!-- scan the package and the sub package -->
-    <context:component-scan base-package="com.alison.utils"/>
+    <!-- scan the package and the sub package 扫描的controller包-->
+    <context:component-scan base-package="com.alison.* "/>
 
     <!-- don't handle the static resource -->
     <mvc:default-servlet-handler />

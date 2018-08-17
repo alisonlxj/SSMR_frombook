@@ -4,10 +4,12 @@ import java.util.List;
 
 import javax.annotation.Resource;
 
+import org.springframework.stereotype.Service;
+
 import com.alison.mapper.UserMapper;
 import com.alison.pojo.User;
 
-
+@Service("userService")
 public class UserServiceImp implements IUserService{
 	
 	@Resource
