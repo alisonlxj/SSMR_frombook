@@ -15,3 +15,8 @@
 5、xml
 	-->	https://www.cnblogs.com/doit8791/p/5757798.html		
 		Spring配置文件头及xsd文件版本	博客园
+		
+		
+6、jstl
+	-->	https://www.cnblogs.com/Qian123/p/5308951.html
+		讲解jstl标签使用，及EL表达式	博客园
